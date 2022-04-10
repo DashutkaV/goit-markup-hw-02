@@ -1,3 +1,15 @@
+:root {
+    --header-color: #212121;
+    --header-link-color: #757575;
+    --main-title-color: #FFFFFF;
+    --second-title-color: #212121;
+    --btn-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --text-color: #757575;
+    --footer-color: #FFFFFF;
+
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -16,50 +28,76 @@ body {
 }
  
 .logo-light {
-    color: white;
+    color: #FFFFFF;
 }
 
 .link {
     text-decoration: none;
 }
 
-.header {
-}
-.header-navigation {
-}
-.header-navigation-list {
-}
-.header-navigation-item {
-}
-.header-navigation-link {
-    width: 49px;
-    height: 16px;
-    left: 453px;
-    top: 32px;   
-}
-.header-list {
-}
-.header-item {
-}
-.header-link {
-    width: 122px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
+.list {
+    list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+/*-------------HEADER---------------*/
+
+.header-navigation-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-color); 
+}
+
+.header-navigation-link:hover, 
+.header-navigation-link:focus {
+    color: var(--accent-color);
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-link-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+/*-------------HERO---------------*/
+
+.hero-content{
+    background: #2F303A;
+
+}
 .title {
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
 }
+
 .btn {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -67,75 +105,74 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    background-color: #2196F3;
+    color: var(--btn-color);
+    cursor: pointer;
+}
 
-    /* color: #FFFFFF; */
+.btn:hover, 
+.btn:focus {
+    color: var(--btn-color);
 }
-.section {
-}
+
+/*-------------WORKS---------------*/
+
 .section-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--second-title-color);
 }
-.features-list {
-}
-.features-item {
-}
+
 .features-title {
-    font-family: 'Roboto';
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--second-title-color);
 }
 .features-text {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color:var(--text-color) ;
 }
-.works-list {
-}
-.works-item {
-}
-.team {
-}
-.team-item {
-}
+
+/*-------------TEAM---------------*/
+
 .team-title {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--second-title-color);
 }
 .team-text {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 
-.footer-address {
-}
-.footer-list {
-}
+/*------------FOOTER---------------*/
+
 .footer-item {
-    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    outline: none;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-content {
+    background: #2F303A;
+}
