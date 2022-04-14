@@ -7,6 +7,8 @@
     --accent-color: #2196F3;
     --text-color: #757575;
     --footer-color: #FFFFFF;
+    --bcg-color: #2F303A;
+
 
 }
 
@@ -20,7 +22,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .logo-dark {
@@ -28,7 +30,7 @@ body {
 }
  
 .logo-light {
-    color: #FFFFFF;
+    color: var(--btn-color);
 }
 
 .link {
@@ -81,13 +83,13 @@ body {
 }
 
 .active {
-    color: var(--header-link-color);
+    color: var(--accent-color);
 }
 
 /*-------------HERO---------------*/
 
 .hero-content{
-    background: #2F303A;
+    background: var(--bcg-color)
 
 }
 .title {
@@ -97,7 +99,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color:var(--main-title-color);
 }
 
 .btn {
@@ -139,7 +141,6 @@ body {
     color: var(--second-title-color);
 }
 .features-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -156,7 +157,6 @@ body {
     color: var(--second-title-color);
 }
 .team-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -167,7 +167,6 @@ body {
 
 .portfolio-filtres-btn {
     font-family: 'Roboto';
-    font-style: normal; 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -189,21 +188,19 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--second-title-color);
 }
 .portfolio-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--header-link-color);
 }
 
 /*------------FOOTER---------------*/
 
 .footer-address {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -213,15 +210,13 @@ body {
 
 .footer-link {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-content {
-    background: #2F303A;
+    background: var(--bcg-color);
 }
 
 
